@@ -1,1 +1,1 @@
-# c_study,practice
+# c_study
