@@ -11,18 +11,21 @@ int main(void) {
     printf("청소년");
     break;
   case 2:
+  case 3:
     printf("청년");
     break;
-  case 3:
+  case 4:
+  case 5:
     printf("중년");
     break;
-  case 4:
+  case 6:    
     printf("장년");
     break;
-  case 5:
+  case 7:
+  case 8:
     printf("노년");
     break;
-  case 6:
+  case 9:
     printf("도전 백세");
     break;
   default:
