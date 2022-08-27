@@ -23,3 +23,14 @@ int main(void) {
     }
   }
 ```
+*1~5까지 5번 반복하는 프로그램
+```c
+#include <stdio.h>
+
+for (int p = 1; p < 6; ++p) {
+    for (int q = 1; q < 6; ++q) {
+      printf("%d ",q);
+    }
+      printf("\n");
+  }
+```
