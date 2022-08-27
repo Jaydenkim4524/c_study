@@ -34,3 +34,24 @@ for (int p = 1; p < 6; ++p) {
       printf("\n");
   }
 ```
+*1,2,3,...,n까지의 수를 직각삼각형 형식으로 나타냄
+*예: n=5
+1
+12
+123
+1234
+12345
+```c
+#include <stdio.h>
+
+int main(void) {
+  int i; scanf("%d", &i);
+  for (int s = 1; s <= i; ++s) {
+    for (int f = 1; f <= s; ++f) {
+      printf("%d ", f);
+    }
+    printf("\n");
+  }
+  return 0;
+}
+```
