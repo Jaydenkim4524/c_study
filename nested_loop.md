@@ -55,13 +55,19 @@ int main(void) {
   return 0;
 }
 ```
+* 위 내용을 이용한 3가지 프로그램
 ```c
+#include <stdio.h>
+
   for (int s = i; s >= 1; --s) {
     for (int f = 1; f <= s; ++f) {
       printf("%d ", f);
     }
     printf("\n");
   }
+```
+```c
+#include <stdio.h>
 
   for (int f = i; f > 0; --f) {
     for (int s = f; s <= i; ++s) {
@@ -69,6 +75,9 @@ int main(void) {
     }
     printf("\n");
   }
+```
+```c
+#include <stdio.h>
 
   for (int s = i; s >= 1; --s) {
     for (int f = s; f >= 1; --f) {
