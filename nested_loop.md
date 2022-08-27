@@ -55,3 +55,25 @@ int main(void) {
   return 0;
 }
 ```
+```c
+  for (int s = i; s >= 1; --s) {
+    for (int f = 1; f <= s; ++f) {
+      printf("%d ", f);
+    }
+    printf("\n");
+  }
+
+  for (int f = i; f > 0; --f) {
+    for (int s = f; s <= i; ++s) {
+      printf("%d ", s);
+    }
+    printf("\n");
+  }
+
+  for (int s = i; s >= 1; --s) {
+    for (int f = s; f >= 1; --f) {
+      printf("%d ", f);
+    }
+    printf("\n");
+  }
+```
