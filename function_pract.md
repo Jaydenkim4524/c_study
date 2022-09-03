@@ -62,3 +62,22 @@ int main(void) {
   return 0;
 }
 ```
+#n의 약수를 출력하는 함수
+```c
+#include <stdio.h>
+
+
+void Divisor(int n){
+    for (int i=1; i<=n;++i){
+        if (n%i==0){
+            printf("%d ", i);
+        }
+    }
+}
+
+int main(void) {
+    int n; scanf("%d",&n);
+    Divisor(n);
+    return 0;
+}
+```
