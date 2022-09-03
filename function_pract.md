@@ -1,4 +1,4 @@
-#함스 연습
+#함수 연습
 
 #include <stdio.h>
 
