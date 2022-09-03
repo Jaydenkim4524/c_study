@@ -1,5 +1,6 @@
 #함수 연습
 
+```c
 #include <stdio.h>
 
 // 매개변수 X, 반환 x
@@ -57,3 +58,4 @@ int main(void) {
   printf("%d\n", Sum4(n));
   return 0;
 }
+```
