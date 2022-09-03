@@ -104,3 +104,23 @@ int main(void) {
     return 0;
 }
 ```
+#n의 절댓값 출력
+
+```c
+#include <stdio.h>
+
+
+int abs(int n){
+    if (n<0){
+        n*=-1;
+    }
+    return n;
+}
+
+int main(void) {
+    int n; scanf("%d",&n);
+    int res=abs(n);
+    printf("%d",res);
+    return 0;
+}
+```
