@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 int main(void) {
-  int a[8];
+  int a[4];
   a[0]=12;
   a[1]=32;
   scanf("%d",&a[2]);
