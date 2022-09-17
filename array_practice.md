@@ -28,3 +28,31 @@ int main(void) {
   printf("%d %d %d %d", a[0], a[1], a[2], a[3]);
 }
 ```
+
+*이 둘 프로그램의 심화버전
+
+```c
+#include <stdio.h>
+
+int main(void) {
+  int a[8];
+  a[0] = 12;
+  a[1] = 32;
+  a[2] = 36;
+  a[3] = 52;
+
+  for (int i = 0; i < 4; i++) {
+    printf("%d ", a[i]);
+  }
+
+  printf("\n");
+
+  for (int i = 4; i < 8; i++) {
+    scanf("%d\n", &a[i]);
+  }
+
+  for (int i = 0; i < 8; i++) {
+    printf("%d ", a[i]);
+  }
+}
+```
