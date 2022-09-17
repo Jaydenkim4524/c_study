@@ -14,3 +14,17 @@ int main(void) {
   printf("%d %d %d %d",a[0],a[1],a[2],a[3]);
 }
 ```
+
+*for문을 이용하여 값을 받아와 모든 값 출력하기
+
+```c
+#include <stdio.h>
+
+int main(void) {
+  int a[4];
+  for (int i = 0; i < 4; i++) {
+    scanf("%d", &a[i]);
+  }
+  printf("%d %d %d %d", a[0], a[1], a[2], a[3]);
+}
+```
