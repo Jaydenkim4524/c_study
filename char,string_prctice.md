@@ -18,3 +18,19 @@ int main(void) {
   return 0;
 }
 ```
+*ASCII 코드를 이용한 대소문자 바꾸기 연습
+```c
+#include <stdio.h>
+
+int main(void) {
+  char ch1, ch2;
+  ch1 = 'A';
+  ch2 = 'a';
+
+  printf("%c %c\n-> ", ch1, ch2);
+  printf("%c %c\n", ch1+32, ch2-32);
+
+  return 0;
+}
+```
+
