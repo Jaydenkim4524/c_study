@@ -24,8 +24,8 @@ int main(void) {
 
 int main(void) {
   char ch1, ch2;
-  ch1 = 'A';
-  ch2 = 'a';
+  printf("왼쪽은 대문자, 오른쪽은 소문자 입력\n");
+  scanf("%c %c",&ch1,&ch2);
 
   printf("%c %c\n-> ", ch1, ch2);
   printf("%c %c\n", ch1+32, ch2-32);
