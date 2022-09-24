@@ -20,16 +20,18 @@ int main(void) {
 ```
 *ASCII 코드를 이용한 대소문자 바꾸기 연습
 ```c
+
 #include <stdio.h>
 
 int main(void) {
-  char ch1, ch2;
-  printf("왼쪽은 대문자, 오른쪽은 소문자 입력\n");
-  scanf("%c %c",&ch1,&ch2);
-
-  printf("%c %c\n-> ", ch1, ch2);
-  printf("%c %c\n", ch1+32, ch2-32);
-
+  char ch;
+  scanf("%c",&ch);
+  if (65<=ch && ch<=90){
+    printf("%c",ch+32);
+  }
+  else{
+    printf("%c",ch-32);
+  }
   return 0;
 }
 ```
