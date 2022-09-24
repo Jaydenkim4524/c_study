@@ -35,4 +35,24 @@ int main(void) {
   return 0;
 }
 ```
+*이번엔 문자열을 바꿔보자!
+```c
+#include <stdio.h>
 
+int main(void) {
+  char ch[15]; 
+  scanf("%s",ch);
+  int i=0;
+  while(ch[i]!='\0'){
+    if (65<=ch[i] && ch[i]<=90){
+    printf("%c",ch[i]+32);
+    }
+    else{
+      printf("%c",ch[i]-32);
+    }
+    i++;
+  }
+  return 0;
+}
+```
+*이렇게 
