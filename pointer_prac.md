@@ -33,6 +33,43 @@ int main(void) {
   pr=&ar[2];
   printf("%d %d\n",*pn, *pr);
 
+*숙제
+```c
+#include <stdio.h>
+
+void AddNum(int, int);
+void SubNum(int *, int *);
+void MulNum(int *, int *);
+void DivNum(int, int);
+
+int main() {
+  int a, b;
+  int *pa = &a, *pb = &b;
+
+  printf("정수 입력 : ");
+  scanf("%d %d", &a, pb);
+
+  AddNum(a, b);
+  SubNum(&a, &b);
+  MulNum(pa, pb);
+  DivNum(*pa, *pb);
+
+  return 0;
+}
+
+void AddNum(){
+  
+}
+void SubNum(){
+  
+}
+void MulNum(){
+  
+}
+void DivNum(){
+  
+}
+```
   return 0;
 }
 ```
