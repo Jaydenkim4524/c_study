@@ -69,3 +69,41 @@ int main(void) {
   return 0;
 }
 ```
+*함수를 이용한 포인터
+```c
+#include <stdio.h>
+
+void getchar(char *cp);
+void printChar(char *cp);
+
+int main(void) {
+  char ch1, ch2;
+  char *cp1, *cp2;
+
+  cp1 = &ch1;
+  cp2 = &ch2;
+  printf("문자1 입력 : ");
+  ch1 = getchar();
+  getchar;
+  printf("문자2 입력 : ");
+  scanf("%c", *cp2);
+  getchar();
+  printf("%c", *cp1);
+  putchar(*cp2);
+
+  getChar(&ch1);
+  printChar(cp1);
+
+  return 0;
+}
+
+void getChar(char *cp){
+  printf("문자3 입력 : ");
+  *cp = getchar();
+  getchar();
+}
+
+void printChar(char *cp){
+  printf("%c", *cp)
+}
+```
