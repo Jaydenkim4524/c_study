@@ -17,3 +17,23 @@ int main(void) {
   return 0;
 }
 ```
+*이번엔 while문!
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar2[][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+  int i, j;
+
+  while (i<3){
+    while (j<4){
+      printf("%d ", ar2[i][j]);
+      j++;
+    }
+  }
+  printf("\n");
+  i++;
+  j=0;
+  return 0;
+}
+```
