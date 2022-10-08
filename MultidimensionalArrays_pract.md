@@ -37,3 +37,21 @@ int main(void) {
   return 0;
 }
 ```
+*do while로도 만들어보자
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar2[][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+  int i, j;
+  do {
+    do {
+      printf("%d ", ar2[i][j]);
+      j++;
+    } while (j < 4);
+    printf("\n");
+    i++;
+    j = 0;
+  } while (i < 3);
+}
+```
