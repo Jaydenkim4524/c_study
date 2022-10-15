@@ -1,5 +1,5 @@
-#오늘은 저번에 했던 2차원 배열과 poiter을 접목시키자  
-*먼저 %ar[0]과 ar의 값을 비교해보자
+# 오늘은 저번에 했던 2차원 배열과 poiter을 접목시키자  
+* 먼저 %ar[0]과 ar의 값을 비교해보자
 ```c
 #include <stdio.h>
 
@@ -12,7 +12,7 @@ int main(void) {
   return 0;
 }
 ```
-*간접 참조의 활용
+* 간접 참조의 활용
 ```c
 #include <stdio.h>
 
@@ -47,7 +47,7 @@ int main(void) {
   return 0;
 }
 ```
-*배열 값을 출력하는 다양한 방법이 있는데 그중 for문을 이용하여 구하는 경우
+* 배열 값을 출력하는 다양한 방법이 있는데 그중 for문을 이용하여 구하는 경우
 ```c
 #include <stdio.h>
 
@@ -70,7 +70,7 @@ int main(void) {
   return 0;
 }
 ```
-*모든 값이 나오게 하기
+* 모든 값이 나오게 하기
 ```c
 #include <stdio.h>
 
