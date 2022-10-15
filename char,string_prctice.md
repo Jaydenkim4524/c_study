@@ -1,5 +1,5 @@
-#문자를 아스키 코드로 나타내기  
-*char 연습
+# 문자를 아스키 코드로 나타내기  
+* char 연습
 ```c
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ int main(void) {
   return 0;
 }
 ```
-*ASCII 코드를 이용한 대소문자 바꾸기 연습
+* ASCII 코드를 이용한 대소문자 바꾸기 연습
 ```c
 
 #include <stdio.h>
@@ -35,7 +35,7 @@ int main(void) {
   return 0;
 }
 ```
-*이번엔 문자열을 바꿔보자!
+* 이번엔 문자열을 바꿔보자!
 ```c
 #include <stdio.h>
 
@@ -55,4 +55,4 @@ int main(void) {
   return 0;
 }
 ```
-*이렇게 
+* 이렇게 
