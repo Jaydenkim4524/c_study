@@ -1,7 +1,7 @@
-#오늘은 다차원 배열 연습을 해볼 것입니다  
-*2차원 배열을 공부합시다!  
-*교재:C큐브코딩 <Let's Play! C>의 Multidimensional Arrays  
-*1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12가 4줄로 3개씩 출력됩니다
+# 오늘은 다차원 배열 연습을 해볼 것입니다  
+* 2차원 배열을 공부합시다!  
+* 교재:C큐브코딩 <Let's Play! C>의 Multidimensional Arrays  
+* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12가 4줄로 3개씩 출력됩니다
 ```c
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ int main(void) {
   return 0;
 }
 ```
-*이번엔 while문!
+* 이번엔 while문!
 ```c
 #include <stdio.h>
 
@@ -38,7 +38,7 @@ int main(void) {
   return 0;
 }
 ```
-*do while로도 만들어보자
+* do while로도 만들어보자
 ```c
 #include <stdio.h>
 
@@ -56,7 +56,7 @@ int main(void) {
   } while (i < 3);
 }
 ```
-*기본
+* 기본
 ```c
 #include <stdio.h>
 
@@ -73,7 +73,7 @@ int main(void) {
     }
 }
 ```
-*1개수 세기
+* 1개수 세기
 ```c
 #include <stdio.h>   
 
@@ -93,7 +93,7 @@ int main(void) {
   printf("%d\n", k);
 }
 ```
-*2의 행과 열 출력하기
+* 2의 행과 열 출력하기
 ```c
 #include <stdio.h>   
 
@@ -112,7 +112,7 @@ int main(void) {
   }
 }
 ```
-*2주변에 5 세우기
+* 2주변에 5 세우기
 ```c
 #include <stdio.h>   
 
@@ -144,7 +144,7 @@ int main(void) {
   }
 }
 ```
-*마지막으로 0->1, 0아닌수->0으로 바꾸기
+* 마지막으로 0->1, 0아닌수->0으로 바꾸기
 ```c
 #include <stdio.h>   
 
