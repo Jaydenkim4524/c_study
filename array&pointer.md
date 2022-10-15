@@ -1,4 +1,5 @@
 # 오늘은 저번에 했던 2차원 배열과 poiter을 접목시켜볼 것입니다
+* 오늘은 좀 내용이 많으니 압축해서 
 * 먼저 %ar[0]과 ar의 값을 비교해보자
 ```c
 #include <stdio.h>
@@ -104,6 +105,21 @@ int main(void) {
 
   printf("%d %d\n",str,name);
   printf("%s %s\n",str,name);
+  return 0;
+}
+```
+* 방금코드와 비슷하지만 다른 그런 코드를 소개하겠다
+```c
+#include <stdio.h>
+
+int main(void) {
+  char *sp="Hello String";
+  char *name="씨큐브코딩";
+
+  printf("%d %d\n",sp,"Hello String");
+  printf("%d %d\n",name,"씨큐브코딩");
+  printf("%s %s\n",sp,"Hello String");
+  printf("%s %s\n",name,"씨큐브코딩");
   return 0;
 }
 ```
