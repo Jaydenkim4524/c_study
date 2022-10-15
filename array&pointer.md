@@ -47,3 +47,26 @@ int main(void) {
   return 0;
 }
 ```
+*배열 값을 출력하는 다양한 방법이 있는데 그중 for문을 이용하여 구하는 경우
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+  int *p;
+  int i;
+  int len = sizeof(ar[0]) / sizeof(ar[0][0]);
+
+  for (i = 0; i < len; i++) {
+    printf("%d ", *(ar[1] + i));
+  }
+  p = ar[2];
+
+  for (i = 0; i < len; i++) {
+    printf("%d ", *(p + i));
+  }
+  printf("\n");
+
+  return 0;
+}
+```
