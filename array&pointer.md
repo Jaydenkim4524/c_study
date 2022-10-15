@@ -90,3 +90,20 @@ int main(void) {
   return 0;
 }
 ```
+* 이번에는 문자열과 포인터를 접목시켜 첫번째에는 주솟값이, 두번째에는 문자열이 출력되도록 프로그래밍해보자
+```c
+#include <stdio.h>
+
+int main(void) {
+  char str[]="Hello String";
+  char name[20]="씨큐브코딩";
+  char *p,*q;
+
+  p=str;
+  q=name;
+
+  printf("%d %d\n",str,name);
+  printf("%s %s\n",str,name);
+  return 0;
+}
+```
