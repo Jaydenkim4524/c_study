@@ -123,3 +123,37 @@ int main(void) {
   return 0;
 }
 ```
+* 원래 값에 더 추가하기
+```c
+#include <stdio.h>
+
+void PrintArray(int ar[]);
+void InputData(int *p);
+
+int main(void) {
+  int ar[20] = {0};
+  int i = 0;
+
+  PrintArray(ar);
+  InputData(ar);
+  PrintArray(ar);
+  return 0;
+}
+
+void PrintArray(int ar[]) {
+  int i = 0;
+  int len = 20;
+  for (i = 0; i < len; i++) {
+    printf("%d", ar[i]);
+  }
+  printf("\n");
+}
+
+void InputData(int *p) {
+  int i = 0;
+  for (i = 0; i < 20; i++) {
+    *(p + i) = i + 1;
+  }
+}
+```
+* 오늘도 끄ㅡㅌ
