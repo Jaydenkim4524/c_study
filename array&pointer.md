@@ -70,3 +70,23 @@ int main(void) {
   return 0;
 }
 ```
+*모든 값이 나오게 하기
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+  int i;
+  int *k;
+  int len = sizeof(ar) / sizeof(ar[0][0]);
+
+  k = ar;
+
+  for (i = 0; i < len; i++) {
+    printf("%d ", *(k + i));
+  }
+  printf("\n");
+
+  return 0;
+}
+```
