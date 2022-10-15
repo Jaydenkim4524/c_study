@@ -12,4 +12,38 @@ int main(void) {
   return 0;
 }
 ```
-*
+*간접 참조의 활용
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar[10] = {10,20,30,40,50,60,70,80,90,100};
+  int i;
+
+  *(ar+0) = 34;
+  *(ar+1) = 21;
+
+  printf("%d %d\n", ar[0], *(ar+0));
+  printf("%d %d\n", ar[1], *(ar+1));
+  printf("%d %d", *(ar+2), *(ar+3));
+  return 0;
+}
+```
+* 포인터를 이용하여 주솟값 출력하기
+```c
+#include <stdio.h>
+
+int main(void) {
+  int ar[3] = {1,2,3};
+  int ar2[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+
+  printf("%d\n",ar);
+  printf("%d\n",&ar[0]);
+
+  printf("%d\n",ar2);
+  printf("%d\n", &ar2[0][0]);
+
+  printf("%d\n", &ar2[1][0]);
+  return 0;
+}
+```
