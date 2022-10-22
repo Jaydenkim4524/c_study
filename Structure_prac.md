@@ -76,3 +76,27 @@ int main(void) {
   return 0;
 }
 ```
+* 또 다른 예제
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Adress {
+  char name[10];
+  char phone[20];
+  char home[50];
+};
+
+int main(void) {
+  struct Adress man1;
+  struct Adress man2 = {"name", "phone", "home"};
+  struct Adress man3;
+
+  scanf("%s %s %s", man3.name, man3.phone, man3.home);
+  strcpy(man1.name, "name");
+  strcpy(man1.phone, "phone");
+  strcpy(man1.home, "home");
+
+  return 0;
+}
+```
