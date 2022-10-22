@@ -122,4 +122,33 @@ int main(void) {
 }
 ```
 * 계속 같은 것으로 연습하니 좀 쉽네요.. ㅎㅎ  
-* 
+* 이중 구조체 만들기^^
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Coordi {
+  int x;
+  int y;
+};
+
+struct Circle {
+  struct Coordi cen;
+  double r;
+};
+int main(void) {
+  struct Circle c1;
+  c1.cen.x = 5;
+  c1.cen.y = 10;
+  c1.r = 4.0;
+
+  struct Circle c2 = {{4, 5}, 12.5};
+  struct Circle c3;
+  scanf("%d %d %d", &c3.cen.x, &c3.cen.y, &c3.r);
+
+  printf("c1:%d %d %d\n", c1.cen.x, c1.cen.y, c1.r);
+  printf("c2:%d %d %d\n", c2.cen.x, c2.cen.y, c2.r);
+  printf("c3:%d %d %d", c3.cen.x, c3.cen.y, c3.r);
+  return 0;
+}
+```
