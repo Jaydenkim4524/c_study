@@ -100,3 +100,26 @@ int main(void) {
   return 0;
 }
 ```
+* 똑같은 유형으로 더 연습해 봅시다
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Circle {
+  double r;
+  int s;
+  int l;
+};
+
+int main(void) {
+  struct Circle c;
+  c.r = 4;
+  c.s = c.r * 3.14 * c.r;
+  c.l = 2 * 3.14 * c.r;
+
+  printf("원의 넓이 : %d, 원의 둘레 : %d", c.s, c.l);
+  return 0;
+}
+```
+* 계속 같은 것으로 연습하니 좀 쉽네요.. ㅎㅎ  
+* 
