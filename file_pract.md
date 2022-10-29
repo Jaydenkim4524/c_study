@@ -63,3 +63,31 @@ int main(void) {
   return 0;
 }
 ```
+* sizeof이용하여 프로그램 만들기
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  FILE *in = fopen("Stringfile.txt", "r");
+  char str1[30];
+  char str2[30];
+  char str3[30];
+
+  if (in == NULL) {
+    printf("파일이 없습니다");
+    exit(1);
+  }
+
+  fgets(str1, sizeof(str1), in);
+  fgets(str2, sizeof(str2), in);
+  fgets(str3, sizeof(str3), in);
+
+  puts(str1);
+  printf("%s", str2);
+
+  fputs(str3, stdout);
+  fclose(in);
+  return 0;
+}
+```
