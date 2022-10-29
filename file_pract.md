@@ -17,4 +17,27 @@ int main(void) {
   return 0;
 }
 ```
+* 문자 쓰기
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void) {
+  FILE *fp;
+
+  fp = fopen("CharOut.txt", "w");
+
+  if (fp == NULL) {
+    printf("파일이 없습니다");
+    exit(1);
+  }
+  fputc('A', fp);
+  fputc('B', fp);
+  fputc('\n', fp);
+  fputc(97, fp);
+  fputc(98, fp);
+
+  fclose(fp);
+  return 0;
+}
+```
