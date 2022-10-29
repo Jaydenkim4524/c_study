@@ -6,15 +6,15 @@
 #include <stdlib.h>
 
 int main(void) {
-	FILE *fp = fopen("file.txt","w");
+  FILE *fp = fopen("file.txt", "w");
 
-	if (fp == NULL){
-	  printf("파일이 없습니다");
-	  exit(1);
-	}
+  if (fp == NULL) {
+    printf("파일이 없습니다");
+    exit(1);
+  }
 
-	fclose(fp);
-	return 0;
+  fclose(fp);
+  return 0;
 }
 ```
 
