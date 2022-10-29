@@ -121,3 +121,33 @@ int main(void) {
   return 0;
 }
 ```
+* 입력해놓은 값을 콘솔로 불러오기
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  FILE *in = fopen("Numberfile.txt", "r");
+  int n, m;
+  double d1, d2;
+
+  if (in == NULL) {
+    printf("파일이 없습니다");
+    exit(1);
+  }
+
+  printf("정수 두개를 입력해주세요");
+  fscanf(in, "%d %d", &n, &m);
+  printf("실수를 두개 입력하세요");
+  fscanf(in, "%lf %lf", &d1, &d2);
+
+  printf("\n입력 받은 수들은 모두 출력되었습니다\n");
+	printf("%d %d\n", n,m);
+	printf("%lf %lf\n",d1,d2);
+  printf("\n\n>>>>>>>>>>>>>>>>>>>>>>>>\n");
+  printf("어디서 입력 받았을까요?");
+
+  fclose(in);
+  return 0;
+}
+```
