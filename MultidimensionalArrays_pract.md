@@ -1,4 +1,4 @@
-# 다차원 배열
+# Multidimensional Arrays 다차원 배열
 * 2차원 배열을 공부합시다!  
 * 교재:C큐브코딩 <Let's Play! C>의 Multidimensional Arrays  
 * 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12가 4줄로 3개씩 출력됩니다
