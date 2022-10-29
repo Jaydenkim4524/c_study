@@ -136,9 +136,9 @@ int main(void) {
     exit(1);
   }
 
-  printf("정수 두개를 입력해주세요");
+  printf("정수 두개를 입력합니다");
   fscanf(in, "%d %d", &n, &m);
-  printf("실수를 두개 입력하세요");
+  printf("실수를 두개를 입력하니다");
   fscanf(in, "%lf %lf", &d1, &d2);
 
   printf("\n입력 받은 수들은 모두 출력되었습니다\n");
@@ -148,6 +148,28 @@ int main(void) {
   printf("어디서 입력 받았을까요?");
 
   fclose(in);
+  return 0;
+}
+```
+* 또 다른 프로그램
+```c
+#include <stdio.h>
+
+int main(void) {
+  int n, num;
+  char *res, str[20];
+
+  printf("문자 입력 : ");
+  n = getchar();
+  printf("n=%d\n", n);
+
+  printf("문자열 입력 : ");
+  res = gets(str);
+  printf("res = %d\n", res);
+
+  printf("형식 입력 : ");
+  n = scanf("%d", &num);
+  printf("n = %d", n);
   return 0;
 }
 ```
