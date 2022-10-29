@@ -41,3 +41,25 @@ int main(void) {
   return 0;
 }
 ```
+* 문자열
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  FILE *fp = fopen("Stringfile.txt", "w");
+  char str1[] = "Hello Coding";
+  char str2[] = "안녕하세요 코딩입니다.\n";
+
+  if (fp == NULL) {
+    printf("파일이 없습니다");
+    exit(1);
+  }
+  fputs("문자열을 출력합니다\n", fp);
+  fputs(str1, fp);
+  fputs("\n", fp);
+  fputs(str2, fp);
+  fclose(fp);
+  return 0;
+}
+```
