@@ -149,6 +149,7 @@ int main(void) {
 ```
 * 프로그램 파일 나눠서 작성하기  
 * 먼저, main file 코드
+```c
 #include <stdio.h>
 #include "MenuModule.h"
 #define ERROR "입력오류\n"
