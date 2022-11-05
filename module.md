@@ -93,3 +93,35 @@ void Difference() {
   printf("%d ", diff);
 }
 ```
+```c
+#include <stdio.h>
+
+void Ccube();
+void Coding();
+
+int main(void) {
+  Ccube();
+  Ccube();
+  Ccube();
+  Coding();
+  Coding();
+  Coding();
+}
+
+void Ccube() {
+  int cnt = 0;
+
+  cnt++;
+  printf("%d 씨큐브\n", cnt);
+}
+
+void Coding() {
+  static int cnt = 0;
+
+  cnt++;
+  printf("%d 코딩\n", cnt);
+}
+```
+* static 변수 코드 끝날때 끝남  
+* 전역 변수 파일의 모드 위치 사용가능(다른 파일은 불가)  
+* 지역 } 괄호 끝날시에 끝남
