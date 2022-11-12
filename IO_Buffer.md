@@ -41,3 +41,17 @@ int main(void) {
 ```
 * 어? 문자를 사요할땐 tab=9, space=32, Enter=10 이 나온다!  
 * 결론은 문자는 ASCII코드를 사용한다
+```c
+#include <stdio.h>
+
+int main(void) {
+  int a;
+  char b;
+
+  scanf("%d", &a);
+  scanf("%c", &b);
+  printf("%d %c", a, b);
+}
+```
+* 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!
+
