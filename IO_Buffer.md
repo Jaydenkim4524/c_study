@@ -152,7 +152,7 @@ int main(void) {
 int main(void) {
   int n = 0;
   while (1) {
-    printf("%d%c", n, 13);
+    printf("%d%c", n, "\n");
     n++;
   }
   return 0;
