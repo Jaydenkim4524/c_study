@@ -130,3 +130,18 @@ int main(void) {
   return 0;
 }
 ```
+* conio.h는 콘솔창에서 버퍼를 사용하지 않는다! _getche()도 마찬가지
+```c
+#include <conio.h>
+#include <stdio.h>
+
+int main(void) {
+  char ch;
+
+  ch = _getche();
+  printf("\nch = %d : %c\n", ch, ch);
+  putchar(ch);
+
+  return 0;
+}
+```
