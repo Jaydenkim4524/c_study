@@ -72,7 +72,7 @@ int main(void) {
 ```
 * 이렇듯 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!  getchar()을 사용하자  
 * 하지만!! 문자열은 다 생략된다
-``c
+```c
 #include <stdio.h>
 
 int main(void) {
