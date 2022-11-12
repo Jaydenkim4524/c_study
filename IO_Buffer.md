@@ -145,3 +145,16 @@ int main(void) {
   return 0;
 }
 ```
+* ASCII코드 이용하여 코드 만들기
+```c
+#include <stdio.h>
+
+int main(void) {
+  int n = 0;
+  while (1) {
+    printf("%d%c", n, 13);
+    n++;
+  }
+  return 0;
+}
+```
