@@ -70,4 +70,33 @@ int main(void) {
   printf("%d %c", a, b);
 }
 ```
-* 이렇듯 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!  getchar()을 사용하자
+* 이렇듯 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!  getchar()을 사용하자  
+* 하지만!! 문자열은 다 생략된다
+``c
+#include <stdio.h>
+
+int main(void) {
+  char str[20];
+
+  scanf("%s", str);
+  printf("%s", str);
+
+  return 0;
+}
+```
+```c
+#include <stdio.h>
+
+int main(void) {
+  char str1[15], str2[15];
+
+  scanf("%s", str1);
+  printf("str1 = %s\n", str1);
+  scanf("%s%s", str1, str2);
+  printf("str1 = %s\n", str1);
+  printf("str2 = %s\n", str2);
+
+  return 0;
+}
+```
+
