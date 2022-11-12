@@ -53,5 +53,21 @@ int main(void) {
   printf("%d %c", a, b);
 }
 ```
-* 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!
+* 문자를 사용할 땐 항상 조심하자! 스페이스나 탭, 엔터도 값이 들어간다!!  
+* 해결책은 --> getchar()을 사용하자  
+* 한번 확인해보자!! 
+* -->
+```c
+#include <stdio.h>
+
+int main(void) {
+  int a;
+  char b;
+
+  scanf("%d", &a);
+  getchar();
+  scanf("%c", &b);
+  printf("%d %c", a, b);
+}
+```
 
