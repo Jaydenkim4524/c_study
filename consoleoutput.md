@@ -147,3 +147,35 @@ void GotoXY(int x, int y){
 }
 ```
 * clock() 만들어 해결하자!!
+* 10씩 증가할때마다 오른쪽으로 움직이기
+```c
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+#include <time.h>
+void GotoXY(COORD pos);
+void delay(int n){
+	clock_t start=clock();
+	while(clock()-start<n*1000);
+}
+int main(){
+	int i;
+	int j;
+	COORD pos;
+	pos.X=20;
+	pos.Y=4;
+	do{
+		GotoXY(pos);
+		printf("%d",i);
+		pos.X+=200;
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+		delay(1);
+		i+=10;
+	} while (i<=100);
+	return 0;
+}
+
+void GotoXY(COORD pos){
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+```
