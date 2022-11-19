@@ -94,6 +94,7 @@ int main(){
 	int x, y;
 	COORD pos;
 	COORD pos1;
+	system("mode con:cols=50 lines=25");
 	
 	do
 	{
@@ -111,7 +112,7 @@ int main(){
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),2);
 		printf("<-: 커서 위치(%d, %d)",pos.X,pos.Y);
-	} while (pos.X <= 80 && pos.Y <= 24);
+	} while (pos.X <= 50 && pos.Y <= 20);
 	
 	return 0;
 }
