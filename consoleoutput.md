@@ -58,3 +58,29 @@ int main(){
 	return 0;
 }
 ```
+* 조금 더 편리해진 커서 위치 정하기.. 하지만 아직도 부족하다..
+```c
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+
+int main(){
+	int x, y;
+	COORD pos;
+	
+	do
+	{
+		pos.X=0;
+		pos.Y=0;
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
+		printf("<-: 커서 시작위치(%d, %d)",pos.X,pos.Y);
+		printf("커서의 위치를 입력하세요");
+		scanf("%d %d",&pos.X, &pos.Y);
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
+		printf("<-: 커서 시작위치(%d, %d)",pos.X,pos.Y);
+		printf("?");
+	} while (pos.X <= 80 && pos.Y <= 24);
+	
+	return 0;
+}
+```
