@@ -84,3 +84,35 @@ int main(){
 	return 0;
 }
 ```
+* 아직 뭔가 부족하다.. 내 마음대로 바꿔보아야지
+```c
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+
+int main(){
+	int x, y;
+	COORD pos;
+	COORD pos1;
+	
+	do
+	{
+		pos.X=0;
+		pos.Y=0;
+		pos1.X=0;
+		pos1.Y=0;
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),4);
+		printf("<-: 커서 시작위치(%d, %d)",pos.X,pos.Y);
+		printf("커서의 위치를 입력하세요");
+		scanf("%d %d",&pos.X, &pos.Y);
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos1);
+		printf("                                                      ");
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),2);
+		printf("<-: 커서 위치(%d, %d)",pos.X,pos.Y);
+	} while (pos.X <= 80 && pos.Y <= 24);
+	
+	return 0;
+}
+```
