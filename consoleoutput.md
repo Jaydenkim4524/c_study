@@ -117,3 +117,33 @@ int main(){
 	return 0;
 }
 ```
+* 너무 빠르니 딜레이를 줘보자
+```c
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+#include <time.h>
+void GotoXY(int x, int y);
+void delay(int n){
+	clock_t start=clock();
+	while(clock()-start<n*1000);
+}
+int main(){
+	int i;
+	int j;
+	
+	do{
+		GotoXY(0,0);
+		printf("%d",i);
+		delay(1);
+		i++;
+	} while (1);
+	return 0;
+}
+
+void GotoXY(int x, int y){
+	COORD pos = {x, y};
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+```
+* clock() 만들어 해결하자!!
