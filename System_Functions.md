@@ -46,3 +46,32 @@ int main(void) {
   return 0;
 }
 ```
+* 바이트 바꾸기
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int ar[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int i;
+  int *pr;
+
+  printf("%d %d %d\n", sizeof(ar), sizeof(ar[0]), sizeof(int));
+
+  for (i = 0; i < sizeof(ar) / sizeof(ar[0]); i++) {
+    printf("%d ", ar[i]);
+  }
+  int n = 20;
+  int *pr2;
+  pr2 = (int *)malloc(sizeof(int)*n);
+  for (i = 0; i < n; i++) {
+    pr2[i] = i + 1;
+  }
+  for (i = 0; i < n; i++) {
+    printf("%d ", pr2[i]);
+  }
+
+  free(pr2);
+  return 0;
+}
+```
