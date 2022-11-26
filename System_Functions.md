@@ -75,3 +75,24 @@ int main(void) {
   return 0;
 }
 ```
+* 비슷한 원리로 a~z까지 출력하기
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int i;
+  int n = 26;
+  char *pr2;
+  pr2 = (char *)malloc(sizeof(char) * n);
+  for (i = 0; i < n; i++) {
+    pr2[i] = i + 'a';
+  }
+  for (i = 0; i < n; i++) {
+    printf("%c ", pr2[i]);
+  }
+
+  free(pr2);
+  return 0;
+}
+```
