@@ -24,3 +24,25 @@ int main(void) {
   return 0;
 }
 ```
+* 메모리 영역은 코드, 데이터, 힘, 스택으로 이루어져 있다
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int *p;
+
+  p = (int *)malloc(sizeof(int) * 5);
+
+  for (int i = 0; i < 5; i++) {
+    p[i] = i;
+    printf("%d", p[i]);
+  }
+  printf("\n");
+
+  for (int i = 0; i < 5; i++) {
+    printf("%d ", *p + 1);
+  }
+  return 0;
+}
+```
