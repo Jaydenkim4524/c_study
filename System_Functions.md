@@ -96,3 +96,18 @@ int main(void) {
   return 0;
 }
 ```
+* 3.141592 실수와 'A' 출력하기
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  double *d = (double *)malloc(sizeof(double));
+  char *c = (char *)malloc(sizeof(char));
+  *d = 3.141592;
+  *c = 'A';
+  printf("%lf\n", *d);
+  printf("%c", *c);
+  return 0;
+}
+```
