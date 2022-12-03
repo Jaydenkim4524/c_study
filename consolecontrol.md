@@ -183,15 +183,15 @@ int main(){
 		printf("2  ");
 		GotoXY(x, y+1);
 		printf("222");
-		x1=x;
-		y1=y;
+		key = getch();
+		key = getch();
 		GotoXY(x1,y1);
 		printf("   ");
 		GotoXY(x1,y1+1);
 		printf("   ");
-		key = getch();
-		key = getch();
 		Move_LeftRightUpDown_Key(key, &x, &y);
+		x1=x;
+		y1=y;
 	} while (key != 27);
 }
 
