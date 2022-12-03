@@ -124,11 +124,14 @@ void Move_LeftRightUpDown_Key(char chr, int *x, int *y);
 
 int main(){
 	char key;
-	int x = 0, y = 0;
-	int i = 0;
+	int x = 0, y = 0, x1 = 0, y1 = 0;
 	do{
 		GotoXY(x, y);
 		printf("@");
+		GotoXY(x1, y1);
+		printf(" ");
+		x1=x;
+		y1=y;
 		key = getch();
 		key = getch();
 		Move_LeftRightUpDown_Key(key, &x, &y);
@@ -145,22 +148,18 @@ void Move_LeftRightUpDown_Key(char key, int *x1, int *y1){
 		case 75:
 			*x1 = *x1 - 1;
 			if(*x1 < 1) *x1 = X_END;
-			system("cls");
 			break;
 		case 72:
 			*y1 = *y1 - 1;
 			if(*y1 < 1) *y1 = Y_END;
-			system("cls");
 			break;
 		case 77:
 			*x1 = *x1 + 1;
 			if(*x1 > X_END) *x1 = 1;
-			system("cls");
 			break;
 		case 80:
 			*y1 = *y1 + 1;
 			if(*y1 > Y_END) *y1 = 1;
-			system("cls");
 			break;
 	}
 }
