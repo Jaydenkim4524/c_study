@@ -1,6 +1,6 @@
 # Console Control
 * 콘솔을 이용한 다양한 코드
-* 1. getch()함수 문자 입력, 16진수 사용
+* getch()함수 문자 입력, 16진수 사용
 ```c
 #include <stdio.h>
 #include <conio.h>
