@@ -127,7 +127,7 @@ int main(){
 	int x = 0, y = 0, x1 = 0, y1 = 0;
 	do{
 		GotoXY(x, y);
-		printf("@");
+		printf("$");
 		GotoXY(x1, y1);
 		printf(" ");
 		x1=x;
