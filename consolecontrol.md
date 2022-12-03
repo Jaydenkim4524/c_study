@@ -32,6 +32,7 @@ int main(){
 	return 0;
 }
 ```
+* @를 방향키로 움직이기
 ```c
 #include <stdio.h>
 #include <conio.h>
@@ -39,26 +40,30 @@ int main(){
 #define X_END 79
 #define Y_END 24
 
-void GotoXY(int x, int y);
+void GotoXY(int x, int y, int i);
 void Move_LeftRightUpDown_Key(char chr, int *x, int *y);
 
 int main(){
 	char key;
 	int x = 0, y = 0;
-	
+	int i = 0;
 	do{
-		GotoXY(x, y);
+		GotoXY(x, y, i);
 		printf("@");
 		key = getch();
 		key = getch();
 		Move_LeftRightUpDown_Key(key, &x, &y);
+		i++;
+		if (i > 250){
+			i = 0;
+		}
 	} while (key != 27);
 }
 
-void GotoXY(int x, int y){
+void GotoXY(int x, int y, int i){
 	COORD Pos = {x, y};
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),Pos);
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 234);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), i);
 }
 
 void Move_LeftRightUpDown_Key(char key, int *x1, int *y1){
@@ -80,5 +85,29 @@ void Move_LeftRightUpDown_Key(char key, int *x1, int *y1){
 			if(*y1 > Y_END) *y1 = 1;
 			break;
 	}
+}
+```
+* &가 복사되지 않고 지우며 움직이는 프로그램
+```c
+#include <stdio.h>
+#include <windows.h>
+
+void GotoXY(int x, int y);
+
+int main(){
+	int x, y = 5;
+	
+	for (x = 1; x < 80; x += 2){
+		system("cls");
+		GotoXY(x, y);
+		printf("&");
+		Sleep(100);
+	}
+	printf("\n");
+}
+
+void GotoXY(int x, int y){
+	COORD Pos = {x - 1, y - 1};
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),Pos);
 }
 ```
