@@ -128,12 +128,12 @@ int main(){
 	do{
 		GotoXY(x, y);
 		printf("$");
+		key = getch();
+		key = getch();
 		GotoXY(x1, y1);
 		printf(" ");
 		x1=x;
 		y1=y;
-		key = getch();
-		key = getch();
 		Move_LeftRightUpDown_Key(key, &x, &y);
 	} while (key != 27);
 }
