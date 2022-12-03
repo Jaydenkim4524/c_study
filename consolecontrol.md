@@ -54,7 +54,7 @@ int main(){
 		key = getch();
 		Move_LeftRightUpDown_Key(key, &x, &y);
 		i++;
-		if (i > 250){
+		if (i > 255){
 			i = 0;
 		}
 	} while (key != 27);
